@@ -20,7 +20,7 @@
     };
 
     try {
-      const response = await fetch('http://localhost:5000/board', {
+      const response = await fetch('https://assetpulsebackend.onrender.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
