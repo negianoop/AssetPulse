@@ -6,7 +6,7 @@
   let items = [];
   let showPopup = false;
 
-  const API = 'http://localhost:5000';
+  const API = 'https://assetpulsebackend.onrender.com';
 
   async function fetchItems() {
     const res = await fetch(API + "/board");
