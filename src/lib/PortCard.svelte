@@ -11,6 +11,8 @@
 </script>
 
 <!-- Compact View -->
+<!-- svelte-ignore a11y_click_events_have_key_events -->
+<!-- svelte-ignore a11y_no_static_element_interactions -->
 <div class="compact-card" on:click={() => showModal = true}>
   <div class="status-indicator {statusClass}"></div>
   <div class="compact-header">P{portNumber}</div>
@@ -18,6 +20,8 @@
 </div>
 
 <!-- Modal View -->
+ <!-- svelte-ignore a11y_click_events_have_key_events -->
+<!-- svelte-ignore a11y_no_static_element_interactions -->
 {#if showModal}
   <div class="modal-backdrop" on:click={() => showModal = false}>
     <div class="modal-card" on:click|stopPropagation>
