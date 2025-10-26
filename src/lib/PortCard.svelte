@@ -3,6 +3,7 @@
   export let ipAddress = '192.168.1.45';
   export let status = 'online';
   export let powerSocket = 'PS-12A';
+  export let other = "other-items"; 
 
 
   let showModal = false;
@@ -34,7 +35,10 @@
         <span class="label">Power Socket:</span>
         <span class="value">{powerSocket}</span>
       </div>
-      
+      <div class="info-item">
+        <span class="label">Other:</span>
+        <span class="value">{other}</span>
+      </div>
     </div>
   </div>
 {/if}
